@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8, garantindo compatibilidade com a maioria dos idiomas -->
+    <meta charset="UTF-8">
+    
+    <!-- Configura a visualização para ser responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <title>Atlétas Paralímpicos</title>
+    
+    <!-- Link para o arquivo CSS externo que contém o estilo da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página com o título principal -->
+    <header>
+        <h1>Atletas Paralímpicos do Brasil</h1>
+    </header>
+    
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção com campo de texto e botão para pesquisar atletas -->
+        <section>
+            <!-- Campo de entrada de texto para o usuário digitar o nome do atleta -->
+            <input type="text" placeholder="Digite o nome do atleta" id="campo-pesquisa">
+            <!-- Botão que chama a função 'pesquisar()' ao ser clicado -->
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        
+        <!-- Seção onde os resultados da pesquisa serão inseridos dinamicamente via JavaScript -->
+        <section id="resultados-pesquisa" class="resultados-pesquisa">
+            <!-- Comentário indicando onde os resultados aparecerão -->
+            <!-- Resultados da pesquisa aparecerão aqui -->
+        </section>
+    </main>
+    
+    <!-- Rodapé da página com informações de direitos autorais e contato -->
+    <footer>
+        <p>Atletas do Brasil. Todos os direitos reservados.</p>
+        <p>Entre em contato por: usuarioX@gmail.com</p>
+    </footer>
+    
+    <!-- Importa o arquivo 'dados.js' que contém os dados ou funções JavaScript relacionados -->
+    <script src="dados.js"></script>
+    
+    <!-- Importa o arquivo 'apps.js' que contém o código JavaScript principal da aplicação -->
+    <script src="apps.js"></script>
+</body>
+</html>
